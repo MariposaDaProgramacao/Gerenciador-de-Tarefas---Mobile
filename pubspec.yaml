@@ -1,0 +1,33 @@
+name: tarefas
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  # ========== ASSETS (APENAS UMA VEZ) ==========
+  assets:
+    - lib/Fundo_sem_mariposas.png
+
+# ========== CONFIGURAÇÃO DO ÍCONE ==========
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "lib/Icone_redondo_mariposa_sem_fundo.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#FFE6A7"
+  adaptive_icon_foreground: "lib/Icone_redondo_mariposa_sem_fundo.png"
